@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="POM Suite" parallel="false">
+<test name="Login Tests">
+<classes>
+<class name="test.Singup_Test"/>
+<class name ="test."/>
+</classes>
+</test>
+</suite>
