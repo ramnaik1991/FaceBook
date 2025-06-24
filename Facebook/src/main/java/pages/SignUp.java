@@ -17,7 +17,7 @@ public class SignUp {
 	By MobileNuorEmailid = By.name("reg_email__");
 	By Password = By.xpath("//input[@name='reg_passwd__']");
 	By Singup = By.xpath("//button[contains(text(),'Sign Up')]\r\n" + "");
-//FB
+
 	public SignUp(WebDriver driver) {
 		this.driver = driver;
 	}
