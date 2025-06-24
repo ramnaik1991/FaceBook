@@ -2,8 +2,8 @@
 <suite name="POM Suite" parallel="false">
 <test name="Login Tests">
 <classes>
-<class name="test.Singup_Test"/>
-<class name ="test."/>
+<class name="test.Singup_Test">
+</class>
 </classes>
 </test>
 </suite>

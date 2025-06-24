@@ -5,11 +5,11 @@
     <classes>
       <class name="test.Singup_Test">
         <methods>
-          <include name="teardown"/>
-          <include name="SelectDateofbirth"/>
-          <include name="setup"/>
-          <include name="SelectDateofbirthmon"/>
-          <include name="SelectDateofbirthyr"/>
+          <include name="setupReport"/>
+          <include name="flushReport"/>
+          <include name="tc_01_singupform"/>
+          <include name="quitDriver"/>
+          <include name="getDriver"/>
         </methods>
       </class> <!-- test.Singup_Test -->
     </classes>

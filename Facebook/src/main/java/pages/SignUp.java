@@ -14,26 +14,26 @@ public class SignUp {
 	By Month = By.id("month");
 	By Year = By.id("year");
 	By Gender = By.xpath("//label[contains(text(),'Male')]\r\n");
-	By MobileNuorEmailid = By.xpath("//input[@name='reg_email__']");
+	By MobileNuorEmailid = By.name("reg_email__");
 	By Password = By.xpath("//input[@name='reg_passwd__']");
 	By Singup = By.xpath("//button[contains(text(),'Sign Up')]\r\n" + "");
-
+//FB
 	public SignUp(WebDriver driver) {
 		this.driver = driver;
 	}
 
 	public void enterfirstname(String firstname) {
-		driver.findElement(Firstname).sendKeys("ram");
+		driver.findElement(Firstname).sendKeys(firstname);
 
 	}
 
 	public void enterSurname(String Surname) {
-		driver.findElement(Firstname).sendKeys("naik");
+		driver.findElement(Firstname).sendKeys(Surname);
 	}
 
 	public void SelectDateofBirthd(String day) {
 		Select selectDay = new Select(driver.findElement(Day));
-		selectDay.deselectByValue("day");
+		selectDay.deselectByValue(day);
 
 	}
 
@@ -53,18 +53,16 @@ public class SignUp {
 		driver.findElement(Gender).click();
 	}
 
-	public void enterMobileNuorEmailid() {
-		driver.findElement(MobileNuorEmailid).sendKeys("7799527");
+	public void enterMobileNuorEmailid(String mobileno) {
+		driver.findElement(MobileNuorEmailid).sendKeys(mobileno);
 	}
 
-	public void password() {
-		driver.findElement(Password).sendKeys("Admin@123");
+	public void password(String pass) {
+		driver.findElement(Password).sendKeys(pass);
 	}
 
 	public void clickonsinup() {
 		driver.findElement(Singup);
 	}
 
-	
-	}
-
+}

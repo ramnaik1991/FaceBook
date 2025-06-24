@@ -5,11 +5,19 @@
     <classes>
       <class name="test.Singup_Test">
         <methods>
-          <include name="teardown"/>
-          <include name="SelectDateofbirth"/>
+          <include name="setupReport"/>
+          <include name="tc_02_validupform"/>
+          <include name="tearDown"/>
+          <include name="flushReport"/>
+          <include name="tc_01_singupform"/>
+          <include name="tc_06_clickSignUp"/>
+          <include name="tc_04_selectGender"/>
           <include name="setup"/>
-          <include name="SelectDateofbirthmon"/>
-          <include name="SelectDateofbirthyr"/>
+          <include name="enterMobilenorEmailid"/>
+          <include name="tc_03_enterPassword"/>
+          <include name="quitDriver"/>
+          <include name="tc_03_selectDOB"/>
+          <include name="getDriver"/>
         </methods>
       </class> <!-- test.Singup_Test -->
     </classes>
