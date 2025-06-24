@@ -59,7 +59,7 @@ public class Singup_Test extends Driver_Factory {
 	public void tc_03_enterPassword() {
 		test = extent.createTest("TC03 Enter password");
 		SignUp sign = new SignUp(driver);
-		sign.password("Test@123");
+		sign.password("Test@1234");
 	}
 
 	@Test
